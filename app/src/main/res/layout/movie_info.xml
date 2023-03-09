@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- ListView 에서 표시할 하나의 항목을 디자인하는 레이아웃 -->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/ivItemImage"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="영화제목"
+       android:textSize="30sp"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:singleLine="true"
+       android:id="@+id/tvMovieNm"/>
+
+    <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="영화 개봉일"
+       android:id="@+id/tvOpenDt"
+       android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영화 순위"
+        android:id="@+id/tvRank"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="누적 관객수"
+        android:id="@+id/tvAudiCnt"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="관심목록 추가"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRes"
+            android:text="예매"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
